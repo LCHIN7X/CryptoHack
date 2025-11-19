@@ -1,7 +1,7 @@
 from pwn import xor
 
 
-label = b"label" #tell python this is a 
+label = b"label" #tell python this is a bytes (we see label but python will see some number there)
 
 
 new_bytes = xor(label, b"\x0d") #0x0d = 13
